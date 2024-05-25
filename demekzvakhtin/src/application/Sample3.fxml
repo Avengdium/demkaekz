@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:controller="application.DeleteDataController"
+     xmlns:fx="http://javafx.com/fxml" alignment="CENTER" spacing="10">
+    
+    <Button text="Delete Request" onAction="#handleDeleteButtonAction"/>
+    <Button text="Update Request" onAction="#updateRequest"/>
+    
+    <TableView fx:id="tableView">
+        <columns>
+        	<TableColumn fx:id="idColumn" text="id" />
+            <TableColumn fx:id="startDate" text="Make" />
+            <TableColumn fx:id="homeTechType" text="Model" />
+            <TableColumn fx:id="problemDescryption" text="Description" />
+            <TableColumn fx:id="requestStatus" text="Status" />
+        </columns>
+    </TableView>
+</VBox>
